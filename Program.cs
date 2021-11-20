@@ -6,7 +6,19 @@ namespace A2S3TD6
     {
         static void Main(string[] args)
         {
-            
+
+
+            string[] schema1 = { "*******", "*d----*", "**---a*", "*******" };
+            Labyrinthe lab = new Labyrinthe(schema1, 4, 7);
+            Personnage personne = new Personnage(lab);
+
+            do
+            {
+                personne.DeplacementSuivant();
+
+            } while (personne.EstArrivee());
+
+
         }
     }
 }
