@@ -26,7 +26,7 @@ namespace A2S3TD6
         }
         public void DeplacementSuivant()
         {
-            Console.WriteLine("Saisir nouvelle position : ");
+            Console.Clear();
 
             int x = position.Ligne;
             int y = position.Colonne;
@@ -46,7 +46,7 @@ namespace A2S3TD6
                     {
                         possiblePosition = true;
                     }
-                    Console.Write(directionPossible(lab, position)[i]);
+                    //Console.Write(directionPossible(lab, position)[i]);
                 }
             } while (!possiblePosition);
                 
@@ -73,6 +73,7 @@ namespace A2S3TD6
             }
 
             lab.MarquerPassage(position);
+            
         }
 
 

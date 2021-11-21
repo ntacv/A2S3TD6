@@ -15,7 +15,7 @@ namespace A2S3TD6
             do
             {
                 personne.DeplacementSuivant();
-
+                
             } while (!personne.EstArrivee());
             EndOfGame();
 
