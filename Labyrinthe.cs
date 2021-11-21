@@ -134,7 +134,7 @@ namespace A2S3TD6
                     }
                     if (matrice[i, j] == 0)
                     {
-                        txt += ' ';
+                        txt += '-';
                     }
 
                 }

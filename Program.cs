@@ -16,9 +16,14 @@ namespace A2S3TD6
             {
                 personne.DeplacementSuivant();
 
-            } while (personne.EstArrivee());
+            } while (!personne.EstArrivee());
+            EndOfGame();
 
-
+        }
+        static void EndOfGame()
+        {
+            Console.Clear();
+            Console.WriteLine("VOUS AVEZ GAGNE!!!!");
         }
     }
 }
